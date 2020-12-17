@@ -2,14 +2,12 @@
 <?= $this->section('main') ?>
 
 <div class="container">
-	<div class="columns">
-		<div class="column is-half is-offset-one-quarter">
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3">
 
             <div class="card">
-                <header class="card-header">
-                    <h2 class="card-header-title"><?=lang('Auth.forgotPassword')?></h2>
-                </header>
-                <div class="card-content">
+                <h2 class="card-header"><?=lang('Auth.forgotPassword')?></h2>
+                <div class="card-body">
 
                     <?= view('Myth\Auth\Views\_message_block') ?>
 
@@ -18,9 +16,9 @@
                     <form action="<?= route_to('forgot') ?>" method="post">
                         <?= csrf_field() ?>
 
-                        <div class="is-grouped">
+                        <div class="form-group">
                             <label for="email"><?=lang('Auth.emailAddress')?></label>
-                            <input type="email" class="input <?php if(session('errors.email')) : ?>is-invalid<?php endif ?>"
+                            <input type="email" class="form-control <?php if(session('errors.email')) : ?>is-invalid<?php endif ?>"
                                    name="email" aria-describedby="emailHelp" placeholder="<?=lang('Auth.email')?>">
                             <div class="invalid-feedback">
                                 <?= session('errors.email') ?>
@@ -29,7 +27,7 @@
 
                         <br>
 
-                        <button type="submit" class="button is-dark"><?=lang('Auth.sendInstructions')?></button>
+                        <button type="submit" class="btn btn-primary btn-block"><?=lang('Auth.sendInstructions')?></button>
                     </form>
 
                 </div>

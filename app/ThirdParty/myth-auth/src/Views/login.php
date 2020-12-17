@@ -2,14 +2,12 @@
 <?= $this->section('main') ?>
 
 <div class="container">
-	<div class="columns">
-		<div class="column is-half is-offset-one-quarter">
+	<div class="row">
+		<div class="col-sm-6 offset-sm-3">
 
 			<div class="card">
-				<header class="card-header">
-					<h2 class="card-header-title"><?=lang('Auth.loginTitle')?></h2>
-				</header>
-				<div class="card-content">
+				<h2 class="card-header"><?=lang('Auth.loginTitle')?></h2>
+				<div class="card-body">
 
 					<?= view('Myth\Auth\Views\_message_block') ?>
 
@@ -17,27 +15,18 @@
 						<?= csrf_field() ?>
 
 <?php if ($config->validFields === ['email']): ?>
-						<div class="is-grouped">
+						<div class="form-group">
 							<label for="login"><?=lang('Auth.email')?></label>
-							<input type="email" class="input <?php if(session('errors.login')) : ?>is-invalid<?php endif ?>"
+							<input type="email" class="form-control <?php if(session('errors.login')) : ?>is-invalid<?php endif ?>"
 								   name="login" placeholder="<?=lang('Auth.email')?>">
 							<div class="invalid-feedback">
 								<?= session('errors.login') ?>
 							</div>
 						</div>
-<?php elseif ($config->validFields === ['username']): ?>
-						<div class="is-grouped">
-							<label for="login"><?=lang('Auth.username')?></label>
-							<input type="text" class="input <?php if(session('errors.login')) : ?>is-invalid<?php endif ?>"
-								   name="login" placeholder="<?=lang('Auth.username')?>">
-							<div class="invalid-feedback">
-								<?= session('errors.login') ?>
-							</div>
-						</div>
 <?php else: ?>
-						<div class="is-grouped">
+						<div class="form-group">
 							<label for="login"><?=lang('Auth.emailOrUsername')?></label>
-							<input type="text" class="input <?php if(session('errors.login')) : ?>is-invalid<?php endif ?>"
+							<input type="text" class="form-control <?php if(session('errors.login')) : ?>is-invalid<?php endif ?>"
 								   name="login" placeholder="<?=lang('Auth.emailOrUsername')?>">
 							<div class="invalid-feedback">
 								<?= session('errors.login') ?>
@@ -45,9 +34,9 @@
 						</div>
 <?php endif; ?>
 
-						<div class="is-grouped">
+						<div class="form-group">
 							<label for="password"><?=lang('Auth.password')?></label>
-							<input type="password" name="password" class="input  <?php if(session('errors.password')) : ?>is-invalid<?php endif ?>" placeholder="<?=lang('Auth.password')?>">
+							<input type="password" name="password" class="form-control  <?php if(session('errors.password')) : ?>is-invalid<?php endif ?>" placeholder="<?=lang('Auth.password')?>">
 							<div class="invalid-feedback">
 								<?= session('errors.password') ?>
 							</div>
@@ -55,7 +44,7 @@
 
 <?php if ($config->allowRemembering): ?>
 						<div class="form-check">
-							<label class="checkbox">
+							<label class="form-check-label">
 								<input type="checkbox" name="remember" class="form-check-input" <?php if(old('remember')) : ?> checked <?php endif ?>>
 								<?=lang('Auth.rememberMe')?>
 							</label>
@@ -64,7 +53,7 @@
 
 						<br>
 
-						<button type="submit" class="button is-dark"><?=lang('Auth.loginAction')?></button>
+						<button type="submit" class="btn btn-primary btn-block"><?=lang('Auth.loginAction')?></button>
 					</form>
 
 					<hr>
