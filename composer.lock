@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1e3c5712accb4893c8f1c11a63b6d6e5",
+    "content-hash": "5ba49fd9544e37f2bcc547d6d6eb4786",
     "packages": [
         {
             "name": "codeigniter4/framework",
@@ -27,7 +27,7 @@
                 "ext-mbstring": "*",
                 "kint-php/kint": "^3.3",
                 "laminas/laminas-escaper": "^2.6",
-                "php": "^7.4.11",
+                "php": ">=7.2",
                 "psr/log": "^1.1"
             },
             "require-dev": {
@@ -2190,7 +2190,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.2"
+        "php": "^7.4.11"
     },
     "platform-dev": [],
     "plugin-api-version": "2.0.0"
