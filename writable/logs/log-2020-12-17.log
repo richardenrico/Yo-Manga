@@ -1,0 +1,37 @@
+CRITICAL - 2020-12-17 03:28:58 --> orang_pagination is not a valid Pager template.
+#0 D:\Richard\Dev Tool\xampp\htdocs\Learning\appstarter\vendor\codeigniter4\framework\system\Pager\Pager.php(182): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('orang_paginatio...')
+#1 D:\Richard\Dev Tool\xampp\htdocs\Learning\appstarter\vendor\codeigniter4\framework\system\Pager\Pager.php(121): CodeIgniter\Pager\Pager->displayLinks('komik', 'orang_paginatio...')
+#2 D:\Richard\Dev Tool\xampp\htdocs\Learning\appstarter\app\Views\komik\index.php(48): CodeIgniter\Pager\Pager->links('komik', 'orang_paginatio...')
+#3 D:\Richard\Dev Tool\xampp\htdocs\Learning\appstarter\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\Richard\\Dev ...')
+#4 D:\Richard\Dev Tool\xampp\htdocs\Learning\appstarter\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('komik/index', Array, true)
+#5 D:\Richard\Dev Tool\xampp\htdocs\Learning\appstarter\app\Controllers\Komik.php(35): view('komik/index', Array)
+#6 D:\Richard\Dev Tool\xampp\htdocs\Learning\appstarter\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Komik->index()
+#7 D:\Richard\Dev Tool\xampp\htdocs\Learning\appstarter\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komik))
+#8 D:\Richard\Dev Tool\xampp\htdocs\Learning\appstarter\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Richard\Dev Tool\xampp\htdocs\Learning\appstarter\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\Richard\Dev Tool\xampp\htdocs\Learning\appstarter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\Richard\\Dev ...')
+#11 {main}
+CRITICAL - 2020-12-17 03:30:24 --> Class 'Myth\Auth\Filters\LoginFilter' not found
+#0 D:\Richard\Dev Tool\xampp\htdocs\Learning\appstarter\vendor\codeigniter4\framework\system\CodeIgniter.php(382): CodeIgniter\Filters\Filters->run('admin', 'before')
+#1 D:\Richard\Dev Tool\xampp\htdocs\Learning\appstarter\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 D:\Richard\Dev Tool\xampp\htdocs\Learning\appstarter\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#3 D:\Richard\Dev Tool\xampp\htdocs\Learning\appstarter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\Richard\\Dev ...')
+#4 {main}
+CRITICAL - 2020-12-17 03:33:10 --> Class 'Myth\Auth\Filters\LoginFilter' not found
+#0 D:\Richard\Dev Tool\xampp\htdocs\Learning\appstarter\vendor\codeigniter4\framework\system\CodeIgniter.php(382): CodeIgniter\Filters\Filters->run('admin', 'before')
+#1 D:\Richard\Dev Tool\xampp\htdocs\Learning\appstarter\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 D:\Richard\Dev Tool\xampp\htdocs\Learning\appstarter\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#3 D:\Richard\Dev Tool\xampp\htdocs\Learning\appstarter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\Richard\\Dev ...')
+#4 {main}
+CRITICAL - 2020-12-17 03:33:12 --> Class 'Myth\Auth\Filters\LoginFilter' not found
+#0 D:\Richard\Dev Tool\xampp\htdocs\Learning\appstarter\vendor\codeigniter4\framework\system\CodeIgniter.php(382): CodeIgniter\Filters\Filters->run('admin', 'before')
+#1 D:\Richard\Dev Tool\xampp\htdocs\Learning\appstarter\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 D:\Richard\Dev Tool\xampp\htdocs\Learning\appstarter\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#3 D:\Richard\Dev Tool\xampp\htdocs\Learning\appstarter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\Richard\\Dev ...')
+#4 {main}
+CRITICAL - 2020-12-17 03:33:19 --> Class 'Myth\Auth\Filters\LoginFilter' not found
+#0 D:\Richard\Dev Tool\xampp\htdocs\Learning\appstarter\vendor\codeigniter4\framework\system\CodeIgniter.php(382): CodeIgniter\Filters\Filters->run('admin', 'before')
+#1 D:\Richard\Dev Tool\xampp\htdocs\Learning\appstarter\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 D:\Richard\Dev Tool\xampp\htdocs\Learning\appstarter\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#3 D:\Richard\Dev Tool\xampp\htdocs\Learning\appstarter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\Richard\\Dev ...')
+#4 {main}
