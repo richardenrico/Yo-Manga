@@ -21,7 +21,7 @@
                 <a class="nav-link px-lg-4" href="/pages/contact">Contact</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link px-lg-4" href="/login">Admin</a>
+                <a class="nav-link px-lg-4" href="/admin">Admin</a>
             </li>
         </ul>
         
