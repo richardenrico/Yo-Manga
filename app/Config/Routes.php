@@ -34,14 +34,14 @@ $routes->get('/', 'Pages::index');
 
 $routes->get('/komik/(:any)', 'Komik::detail/$1');
 
-$routes->get('admin/user', 'Orang::index');
-$routes->get('admin', 'Admin::index');
-$routes->get('admin/komik', 'Admin::view_komik');
-$routes->get('admin/komik/create', 'Admin::create_komik');
-$routes->get('admin/komik/save', 'Admin::save_komik');
-$routes->get('admin/komik/edit/(:segment)', 'Admin::edit_komik/$1');
-$routes->delete('admin/komik/(:num)', 'Admin::delete_komik/$1');
-$routes->get('admin/komik/(:any)', 'Admin::detail_komik/$1');
+$routes->get('/admin/user', 'Orang::index');
+$routes->get('/admin', 'Admin::index');
+$routes->get('/admin/komik', 'Admin::view_komik');
+$routes->get('/admin/komik/create', 'Admin::create_komik');
+$routes->get('/admin/komik/save', 'Admin::save_komik');
+$routes->get('/admin/komik/edit/(:segment)', 'Admin::edit_komik/$1');
+$routes->delete('/admin/komik/(:num)', 'Admin::delete_komik/$1');
+$routes->get('/admin/komik/(:any)', 'Admin::detail_komik/$1');
 
 /**
  * --------------------------------------------------------------------
