@@ -32,6 +32,8 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Pages::index');
 
+$routes->get('/logout', 'AuthController::logout');
+
 $routes->get('/komik/(:any)', 'Komik::detail/$1');
 
 $routes->get('/admin/user', 'Orang::index');
