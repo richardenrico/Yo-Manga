@@ -1,0 +1,361 @@
+/* Variable Classes */
+
+html, body {
+    font-family: 'Audiowide', cursive;
+    margin: 0%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: #121212;
+    color: whitesmoke;
+}
+
+:root {
+    /* --border-color: #201f1f17; */
+    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+    --audiowide: 'Audiowide', cursive;
+}
+
+/* End Variable Classes */
+
+/* Global Classes */
+
+.button.primary-button{
+    /* padding: .8rem 2.2rem; */
+    
+    /* font: normal 500 16px/20px var(--audiowide); */
+    position: relative;
+    border-color: #D0CD3F;
+    border-radius: 4px;
+    background: #D0CD3F;
+    /* -webkit-background-clip: padding-box; */
+    /* background-clip: padding-box; */
+    color: #10110b;
+    transition: background .6s ease;
+    /* box-shadow: var(--box-shadow); */
+}
+
+.button.edit-button{
+    /* padding: .8rem 2.2rem; */
+    
+    /* font: normal 500 16px/20px var(--audiowide); */
+    position: relative;
+    border-color: #AAAAAA;
+    border-radius: 4px;
+    background: #AAAAAA;
+    /* -webkit-background-clip: padding-box; */
+    /* background-clip: padding-box; */
+    color: #10110b;
+    transition: background .6s ease;
+    /* box-shadow: var(--box-shadow); */
+}
+
+.button.delete-button{
+    /* padding: .8rem 2.2rem; */
+    
+    /* font: normal 500 16px/20px var(--audiowide); */
+    position: relative;
+    border-color: #CA0B00;
+    border-radius: 4px;
+    background: #CA0B00;
+    /* -webkit-background-clip: padding-box; */
+    /* background-clip: padding-box; */
+    color: #10110b;
+    transition: background .6s ease;
+    /* box-shadow: var(--box-shadow); */
+}
+
+.button.delete-button:hover {
+    background: #10110b;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    color: #D0CD3F;
+    border-color: #D0CD3F;
+}
+
+.button.edit-button:hover {
+    background: #10110b;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    color: #D0CD3F;
+    border-color: #D0CD3F;
+}
+
+.button.primary-button:hover {
+    background: #10110b;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    color: #D0CD3F;
+    border-color: #D0CD3F;
+}
+
+.button.primary-button::after, .button.secondary-button::after {
+    position: absolute;
+    top: -2px; left: -2px;
+    bottom: -2px; right: -2px;
+    background: black;
+    content: " ";
+    z-index: -1;
+    border-radius: 1px;
+}
+
+.button.secondary-button {
+    background: whitesmoke;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    transition: background .6s ease;
+}
+
+.button.secondary-button:hover {
+    background: black;
+    color: whitesmoke;
+    box-shadow: var(--box-shadow);
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #10110b;
+    background-color: #D0CD3F;
+    border-color: #D0CD3F;
+}
+
+a.page-link {
+    background-color: #10110b;
+    border-color: #D0CD3F;
+    color: #D0CD3F;
+}
+
+a.page-link:hover {
+    background: #D0CD3F;
+    color: #10110b;
+    border-color: #D0CD3F;
+}
+
+.table > thead > tr > * {
+    text-align: center;
+    color: #D0CD3F;
+}
+
+.table > tbody > tr > * {
+    color: whitesmoke;
+}
+/* End Global Classes */
+
+/* Navbar Area */
+
+.navbar {
+    background-color: #121212;
+}
+
+.navbar .navbar-toggler {
+    color: #D0CD3F;
+    border-color: #D0CD3F;
+}
+
+.navbar.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar .nav-link {
+    color: #D0CD3F;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar .nav-link:hover {
+    color: #10110b;
+    background-color: #D0CD3F;
+    transition: 0.5s ease;
+    border-radius: 4px
+}
+
+/* End Navbar Area */
+
+/* Home Area */
+
+.home {
+    vertical-align: middle;
+}
+
+/* End Home Area */
+
+/* Index Komik Area */
+
+.breadcrumb-item a {
+    color: #D0CD3F;
+}
+
+.input-group .form-control {
+    color: whitesmoke
+}
+
+.hovereffect {
+    width:100%;
+    height:100%;
+    float:left;
+    overflow:hidden;
+    position:relative;
+    text-align:center;
+    cursor:default;
+}
+    
+.hovereffect .overlay {
+    padding-top: 150px;
+    width:100%;
+    height:100%;
+    position:absolute;
+    overflow:hidden;
+    top:0;
+    left:0;
+    opacity:0;
+    background-color:rgba(0,0,0,0.5);
+    -webkit-transition:all .4s ease-in-out;
+    transition:all .4s ease-in-out
+}
+    
+.hovereffect img {
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    position:relative;
+    -webkit-transition:all .4s linear;
+    transition:all .4s linear;
+    height: 350px;
+    width: 250px;
+}
+    
+.hovereffect h2 {
+    text-transform:uppercase;
+    color:#fff;
+    text-align:center;
+    position:relative;
+    font-size:17px;
+    background:rgba(0,0,0,0.6);
+    -webkit-transform:translatey(-100px);
+    -ms-transform:translatey(-100px);
+    transform:translatey(-100px);
+    -webkit-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+    padding:10px;
+}
+    
+.hovereffect a.info {
+    text-decoration:none;
+    display:inline-block;
+    text-transform:uppercase;
+    color:#fff;
+    border:1px solid #fff;
+    background-color:transparent;
+    opacity:0;
+    filter:alpha(opacity=0);
+    -webkit-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+    margin:50px 0 0;
+    padding:7px 14px;
+}
+    
+.hovereffect a.info:hover {
+    box-shadow:0 0 5px #fff;
+}
+    
+.hovereffect:hover img {
+    -ms-transform:scale(1.2);
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+}
+    
+.hovereffect:hover .overlay {
+    opacity:1;
+    filter:alpha(opacity=100);
+}
+    
+.hovereffect:hover h2,.hovereffect:hover a.info {
+    opacity:1;
+    filter:alpha(opacity=100);
+    -ms-transform:translatey(0);
+    -webkit-transform:translatey(0);
+    transform:translatey(0);
+}
+    
+.hovereffect:hover a.info {
+    -webkit-transition-delay:.2s;
+    transition-delay:.2s;
+}
+
+/* End List Komik Area */
+
+/* Detail Komik Area */
+
+.detail.detail-content.card-body.title p {
+    color: #D0CD3F;
+}
+
+
+/* End Detail Komik Area */
+
+/* Contact Area */
+
+.contact-area {
+    padding-top: 1rem;
+    margin-bottom: 100px;
+}
+
+.contact-area h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.circle {
+    height: 70px;
+    width: 70px;
+    background-color: #D0CD3F;
+    color: #10110b;
+    padding: 12px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.circle p {
+    color: gray;
+}
+
+.circle:hover {
+    background: #121212;
+    color: #D0CD3F;
+    transition: 0.5s ease;
+}
+
+/* End Contact Area */
+
+/* Footer Area */
+
+.footer-area {
+    margin-top: 5rem;
+    background-color: #121212;
+    color: #D0CD3F;
+}
+
+.social i {
+    color: #D0CD3F;
+    font-size: 30px;
+}
+
+.social i:hover {
+    color: #AAAAAA;
+    transition: 0.5s ease;
+}
+
+.footer-area .copyright a {
+    color: whitesmoke;
+}
+
+.footer-area .copyright a:hover {
+    color: #D0CD3F;
+    transition: 0.5s ease;
+}
+
+/* End Footer Area */
