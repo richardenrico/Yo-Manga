@@ -18,6 +18,13 @@
     <style>
         body {
             padding-top: 5rem;
+            font-family: 'Audiowide', cursive;
+            margin: 0%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            background-color: #121212;
+            color: #121212;
         }
     </style>
     
@@ -25,8 +32,6 @@
 </head>
 
 <body>
-
-<?= view('Myth\Auth\Views\_navbar') ?>
 
 <main role="main" class="container">
 	<?= $this->renderSection('main') ?>
