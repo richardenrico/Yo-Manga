@@ -62,7 +62,6 @@ class Auth extends BaseConfig
 	 * @var string[]
 	 */
 	public $validFields = [
-		'email',
 		'username',
 	];
 
@@ -135,7 +134,7 @@ class Auth extends BaseConfig
 	 *
 	 * @var bool
 	 */
-	public $allowRegistration = true;
+	public $allowRegistration = false;
 
 	/**
 	 * --------------------------------------------------------------------
@@ -174,7 +173,7 @@ class Auth extends BaseConfig
 	 *
 	 * @var bool
 	 */
-	public $allowRemembering = false;
+	public $allowRemembering = true;
 
 	/**
 	 * --------------------------------------------------------------------
