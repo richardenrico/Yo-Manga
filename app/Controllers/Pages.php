@@ -7,7 +7,7 @@ class Pages extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Yo!Admin',
+            'title' => 'Yo!Manga',
         ];
 
         return view('pages/home', $data);
