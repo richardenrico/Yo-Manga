@@ -17,7 +17,7 @@
         <div class="col">
             <h2 class="my-4">Add Comic Data Form</h2>
 
-            <form action="/admin/save_komik/" method="post" enctype="multipart/form-data">
+            <form action="/admin/save_komik" method="post" enctype="multipart/form-data">
                 <?= csrf_field(); ?>
                 <div class="row mb-3">
                     <label for="judul" class="col-sm-2 col-form-label">Title</label>
